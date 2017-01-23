@@ -1,7 +1,12 @@
 #!
 
 # Git Alias
-echo "alias g=git" >> ~/.bash_aliases
+echo "
+
+alias g=git
+alias c=clear
+
+" >> ~/.bash_aliases
 
 
 # Git Configs
@@ -14,7 +19,7 @@ git config --global alias.c commit
 git config --global push.default simple
 git config --global alias.lg log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 git config --global alias.pull pull --rebase --autostash
-
+git config --global alias.a add
 
 # Pretty Git Command Line
 echo "
@@ -24,6 +29,22 @@ GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\[$(tput setaf 4)\]\u\[$(tput setaf 7)\] \W\[$(tput setaf 1)\]$(__git_ps1)\] $ \[$(tput setaf 7)\]'
 
 " >> ~/.bashrc
+
+# Vim Editor
+echo "
+
+export EDITOR=vim
+
+" >> ~/.bashrc
+
+# Vim Settings
+echo "
+
+set number
+syntax on
+
+" >> ~/.vimrc
+
 
 # Node + Npm
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
