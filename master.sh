@@ -26,7 +26,7 @@ echo "
 
 source /etc/bash_completion.d/git-prompt
 GIT_PS1_SHOWDIRTYSTATE=true
-export PS1='\[$(tput setaf 4)\]\u\[$(tput setaf 7)\] \W\[$(tput setaf 1)\]$(__git_ps1)\] $ \[$(tput setaf 7)\]'
+export PS1='\[$(tput setaf 39)\]\u\[$(tput setaf 7)\] \W\[$(tput setaf 1)\]$(__git_ps1)\] $ \[$(tput setaf 7)\]'
 
 " >> ~/.bashrc
 
