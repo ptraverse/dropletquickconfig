@@ -26,7 +26,7 @@ echo "
 
 source /etc/bash_completion.d/git-prompt
 GIT_PS1_SHOWDIRTYSTATE=true
-export PS1='\[$(tput setaf 39)\]\u\[$(tput setaf 7)\] \W\[$(tput setaf 1)\]$(__git_ps1)\] $ \[$(tput setaf 7)\]'
+export PS1='\[$(tput setaf 2)\]\u\[$(tput setaf 7)\] \W\[$(tput setaf 1)\]$(__git_ps1) $ \[$(tput setaf 7)\]'
 
 " >> ~/.bashrc
 
@@ -64,4 +64,4 @@ sudo apt-get install -y mongodb-org --allow-unauthenticated
 npm install -g mocha nodemon -y --allow-unauthenticated
 
 # Run  bashrc again to make it all work
-. ~/.bashrc
+echo "All done! Do `source ~/.bashrc` to enable in this shell."
